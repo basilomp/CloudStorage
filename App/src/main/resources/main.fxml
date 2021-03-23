@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" prefHeight="500.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fileManager.Controller">
+    <MenuBar>
+        <Menu text="File manager">
+            <MenuItem text="Close" onAction="#btnExitAction"/>
+        </Menu>
+    </MenuBar>
+    <HBox VBox.vgrow="ALWAYS">
+        <fx:include fx:id="leftPane" source="pane.fxml" HBox.hgrow="ALWAYS"/>
+        <fx:include fx:id="rightPane" source="pane.fxml" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <HBox spacing="5">
+        <Button maxWidth="Infinity" focusTraversable="false" text="Copy" HBox.hgrow="ALWAYS" onAction="#copyButtonAction">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </HBox.margin></Button>
+        <Button maxWidth="Infinity" focusTraversable="false" text="Move" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin></Button>
+        <Button maxWidth="Infinity" focusTraversable="false" text="Delete" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </HBox.margin></Button>
+        <Button maxWidth="Infinity" focusTraversable="false" text="Close" HBox.hgrow="ALWAYS" onAction="#btnExitAction">
+         <HBox.margin>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </HBox.margin></Button>
+    </HBox>
+</VBox>
