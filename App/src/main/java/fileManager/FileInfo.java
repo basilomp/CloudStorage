@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-
+//Class for identifying file type and other info
 public class FileInfo {
     public enum Extension {
         FILE("F"),

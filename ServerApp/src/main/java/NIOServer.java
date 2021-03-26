@@ -5,7 +5,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.*;
 import java.util.Iterator;
 import java.util.Set;
-
+//Server class
 public class NIOServer {
     private static Selector selector = null;
 

@@ -18,7 +18,7 @@ import java.nio.file.Paths;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
-
+//Class for building gui
 public class paneController implements Initializable {
     @FXML
     TableView<FileInfo> catalog;
